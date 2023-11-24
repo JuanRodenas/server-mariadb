@@ -62,15 +62,17 @@ Our self-hosted server infrastructure consists of several different microservice
 ## Get Started using Docker
 <aside>
 💡 <strong>Informative note:</strong>
-<p>&nbsp;&nbsp;The above steps are based on a network that may differ from the one you have set up. If you follow all the steps to the letter, they may not match the configuration of your network and render it unusable. Always adapt the above documentation to match your network..</p>
+<p>The above steps are based on a network that may differ from the one you have set up. If you follow all the steps to the letter, they may not match the configuration of your network and render it unusable. Always adapt the above documentation to match your network..</p>
 </aside>
 
 In order to document the process, I have created a folder with different pages to document the process correctly.
 
-<p> &nbsp;👉 <em>Using our docker-compose configuration with MariaDB.</em>	<a href="docs/docker-installation.md"><img src="https://img.shields.io/badge/docker installation-blue.svg?style=flat" alt="installation"></a></p>
-<p> &nbsp;👉 <em>Install nginx and provide https to your instance.</em>	<a href="docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a></p>
-<p> &nbsp;👉 <em>Configuring the MariaDB database and file uploads.</em>	<a href="docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a></p>
-<p> &nbsp;👉 <em>Troubleshooting page.</em> <a href="docs/troubleshooting.md"><img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a></p>
+| pages | readme |
+| :-- | :--: |
+| 👉 <em>Using our docker-compose configuration with MariaDB.</em> | <a href="docs/docker-installation.md"><img src="https://img.shields.io/badge/docker installation-blue.svg?style=flat" alt="installation"></a> |
+| 👉 <em>Install nginx and provide https to your instance.</em> | <a href="docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a> |
+| 👉 <em>Configuring the MariaDB database and file uploads.</em> | 	<a href="docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a> |
+| 👉 <em>Troubleshooting page.</em> | <a href="docs/troubleshooting.md"><img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a> |
 
 <aside>
 💡 <strong>Informative note:</strong>

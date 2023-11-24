@@ -63,6 +63,12 @@ nginx -t
 In order to use HTTPS on your standard note server, you have two options, use your standard notes server locally or use your standard notes server with a reverse proxy. I will explain both options.
 
 ### HTTPS on your standard note server locally
+<details>
+<summary>HTTPS on your standard note server locally</summary>
+
+<Original>&nbsp;HTTPS on your standard note server locally:</Original>
+
+### HTTPS on your standard note server locally
 1. In order to use nginx and https locally, we must use the server ip and a certificate, I will explain with cerbot (lets encrypt).
 	1.1 First we will use port 443 instead of port 80.
 	```bash
@@ -116,7 +122,17 @@ Go to [certbot](https://certbot.eff.org/instructions) to get and install your HT
 	<p>&nbsp;&nbsp;If you want to send the <code>lets encrypt</code> folder, change the <code>/path/to/data</code> to <code>/path/to/data</code>.</p>
 	</aside>
 
+</details>
+&nbsp;
+
 ### HTTPS on your standard note server with a reverse proxy
+<details>
+<summary>HTTPS on your standard note server with a reverse proxy</summary>
+
+<Original>&nbsp;HTTPS on your standard note server with a reverse proxy:</Original>
+
+### HTTPS on your standard note server with a reverse proxy
+
 1. We can install a reverse proxy, such as traefik. Traefik puede utilizar un proveedor ACME (como Let's Encrypt) para la generación automática de certificados. Creará el certificado e intentará renovarlo automáticamente 30 días antes de su vencimiento. Uno de los grandes beneficios de usar desafíos DNS es que nos permitirá usar certificados comodín; por otro lado, puede crear un riesgo de seguridad ya que requiere otorgar derechos a Traefik para crear y eliminar algunos registros DNS.
 You can install Traefik from the repository I have created for this purpose. <a href="https://github.com/JuanRodenas/selfhosted/tree/main/traefik"><img src="https://img.shields.io/badge/traefik-blue.svg?style=flat" alt="traefik"></a>
 
@@ -136,6 +152,9 @@ You can install Traefik from the repository I have created for this purpose. <a 
 	docker-compose logs -f
 	```
 After completing the above instructions, your Sync server should be HTTPS enabled!
+
+</details>
+&nbsp;
 
 In the account menu, choose `Advanced Options` and enter the address of your new server in `Sync Server Domain`.
 
