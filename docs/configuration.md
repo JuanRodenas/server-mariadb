@@ -1,23 +1,25 @@
 ## Documentation to deploy with MariaDB:
-```shell
-  db:
-    image: mariadb
-    container_name: db
-    restart: unless-stopped
-    command: --transaction-isolation=READ-COMMITTED --log-bin=binlog --binlog-format=ROW
-    volumes:
-      - /path/to/data/mysql:/var/lib/mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: ${PASSWORD_ROOT}
-      MYSQL_DATABASE: ${DATABASE}
-      MYSQL_USER: ${USERNAME}
-      MYSQL_PASSWORD: ${PASSWORD}
+```bash
+db:
+image: mariadb
+container_name: db
+restart: unless-stopped
+command: --transaction-isolation=READ-COMMITTED --log-bin=binlog --binlog-format=ROW
+volumes:
+  - /path/to/data/mysql:/var/lib/mysql
+environment:
+  MYSQL_ROOT_PASSWORD: ${PASSWORD_ROOT}
+  MYSQL_DATABASE: ${DATABASE}
+  MYSQL_USER: ${USERNAME}
+  MYSQL_PASSWORD: ${PASSWORD}
 ```
 
->> Important: Do not add the .env file to the database, because it will not raise the container and will give error for the variables of another container.
+<aside>
+💡 Important: Do not add the .env file to the database, because it will not raise the container and will give error for the variables of another container.
+</aside>
 
 In the .env file, indicate the port of MariaDB
-```shell
+```bash
 DB_HOST=db
 DB_PORT=3306
 ```
@@ -58,7 +60,9 @@ In order to upload files you have to have an active subscription for your user. 
 
 `PUBLIC_FILES_SERVER_URL=`
 
->> I have encountered a number of people who are lost and have given up on installing standardnotes because they are not clear on how to install it.
+<aside>
+💡 Note: I have encountered a number of people who are lost and have given up on installing standardnotes because they are not clear on how to install it.
+</aside>
 
 
 ## Emphasize the importance of creating 3 "different" keys in these sections with the following command: openssl rand -hex 32
@@ -68,4 +72,6 @@ AUTH_SERVER_ENCRYPTION_SERVER_KEY=
 AUTH_JWT_SECRET=
 VALET_TOKEN_SECRET=
 
->> I noticed that if you don't set them different, the files get corrupted when uploading.
+<aside>
+💡 Note: I noticed that if you don't set them different, the files get corrupted when uploading.
+</aside>

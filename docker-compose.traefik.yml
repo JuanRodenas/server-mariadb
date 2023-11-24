@@ -1,0 +1,50 @@
+version: '3'
+
+services:
+  nginx-puma:
+    labels:
+      # standardnotes
+      - "traefik.enable=true"
+      - "traefik.http.routers.standardnotes.rule=Host(`${FQDN}`)"
+      - "traefik.http.routers.standardnotes.entrypoints=websecure"
+      - "traefik.http.services.standardnotes.loadbalancer.server.port=80"
+      - "traefik.http.routers.standardnotes.service=standardnotes"
+      - "traefik.http.routers.standardnotes.tls=true"
+      - "traefik.http.routers.standardnotes.tls.certresolver=lets-encrypt"
+      # sync
+      - "traefik.http.routers.sync.rule=Host(`${FQDN1}`)"
+      - "traefik.http.routers.sync.entrypoints=websecure"
+      - "traefik.http.services.sync.loadbalancer.server.port=3125"
+      - "traefik.http.routers.sync.service=sync"
+      - "traefik.http.routers.sync.tls=true"
+      - "traefik.http.routers.sync.tls.certresolver=lets-encrypt"
+      # ipwhitelist
+      - "traefik.http.routers.standardnotes.middlewares=securednote"
+      - "traefik.http.routers.sync.middlewares=securednote"
+      - "traefik.http.middlewares.securednote.chain.middlewares=lista-blanca-standardnotes"
+      - "traefik.http.middlewares.lista-blanca-standardnotes.ipwhitelist.sourcerange=192.168.1.0/24, 10.10.2.1, 10.10.3.1"
+    networks:
+      - nextcloud
+      - internal
+	  
+  app:
+    networks:
+      - internal
+	  
+  localstack:
+    networks:
+      - internal
+
+  db:
+    networks:
+      - internal
+
+  cache:
+    networks:
+      - internal
+
+networks:
+  nextcloud:
+    external: true
+  internal:
+    external: false

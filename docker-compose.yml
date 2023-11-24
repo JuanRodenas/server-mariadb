@@ -1,0 +1,65 @@
+version: '3'
+
+services:
+  nginx-puma:
+    container_name: stand_nginx
+    image: nginx:stable
+    restart: unless-stopped
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /path/to/data/nginx:/etc/nginx
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+      - "3125:3125"
+
+  app:
+    image: standardnotes/server
+    container_name: standardnotes
+    restart: unless-stopped
+    depends_on:
+      - db
+    volumes:
+      - /path/to/data/data/logs:/var/lib/server/logs
+      - /path/to/data/data/uploads:/opt/server/packages/files/dist/uploads
+    env_file:
+      - .env
+
+  localstack:
+    image: localstack/localstack:latest
+    container_name: stand_localstack
+    restart: unless-stopped
+    environment:
+      - SERVICES=sns,sqs
+      - HOSTNAME_EXTERNAL=localstack
+      - LS_LOG=warn
+    volumes:
+      - /path/to/data/localstack_bootstrap.sh:/etc/localstack/init/ready.d/localstack_bootstrap.sh
+
+  db:
+    image: mariadb:latest
+    container_name: stand_db
+    restart: unless-stopped
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW --innodb-file-per-table=1 --skip-innodb-read-only-compressed
+    volumes:
+      - /path/to/data/data/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${PASSWORD_ROOT}
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+
+  cache:
+    image: redis:latest
+    container_name: stand_cache 
+    restart: unless-stopped
+    volumes:
+      - cache-notes:/data
+    networks:
+      - internal
+
+volumes:
+  cache-notes:
+    name: "cache-notes"

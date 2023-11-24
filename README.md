@@ -25,10 +25,12 @@
 ## Docker version
 
 ### Standard Notes
-![Docker Image Version (tag latest)](https://img.shields.io/docker/r/standardnotes/server/latest?style=flat&logo=docker&logoColor=white&labelColor=0088cc&color=0088cc)
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/standardnotes/server/latest?style=flat&logo=docker&logoColor=white&label=standard%20notes&labelColor=0088cc&color=0088cc)
+
 
 ### Localstack
-![Docker Image Version (tag latest)](https://img.shields.io/docker/r/localstack/localstack/latest?style=flat&logo=docker&logoColor=white&labelColor=0088cc&color=0088cc)
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/localstack/localstack/latest?style=flat&logo=docker&logoColor=white&label=localstack&labelColor=0088cc&color=0088cc)
+
 
 ## Requirements
 
@@ -58,17 +60,22 @@ To get started with self-hosting our client applications, visit our app code rep
 Our self-hosted server infrastructure consists of several different microservices that are responsible for different sets of functionality. Our self-hosted server is only intended as the backend that processes and stores your data; it does not include self-hosting the web application, which is an optional process that must be done separately. You will be able to use our existing [web](https://app.standardnotes.com) and desktop app with your self-hosted server.
 
 ## Get Started using Docker
+<aside>
+💡 <strong>Informative note:</strong>
+<p>&nbsp;&nbsp;The above steps are based on a network that may differ from the one you have set up. If you follow all the steps to the letter, they may not match the configuration of your network and render it unusable. Always adapt the above documentation to match your network..</p>
+</aside>
+
 In order to document the process, I have created a folder with different pages to document the process correctly.
 
 <p> &nbsp;👉 <em>Using our docker-compose configuration with MariaDB.</em>	<a href="docs/docker-installation.md"><img src="https://img.shields.io/badge/docker installation-blue.svg?style=flat" alt="installation"></a></p>
 <p> &nbsp;👉 <em>Install nginx and provide https to your instance.</em>	<a href="docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a></p>
 <p> &nbsp;👉 <em>Configuring the MariaDB database and file uploads.</em>	<a href="docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a></p>
-<p> &nbsp;👉 <em>Troubleshooting page.</em> <a href="docs/troubleshooting.md">	<img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a></p>
+<p> &nbsp;👉 <em>Troubleshooting page.</em> <a href="docs/troubleshooting.md"><img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a></p>
 
-<blockquote>
+<aside>
 💡 <strong>Informative note:</strong>
 <p>&nbsp;&nbsp;Our configuration also provides a Redis cache node. I will provide help with that as well.</p>
-</blockquote>
+</aside>
 
 ## Recommendations
 
@@ -82,15 +89,15 @@ We recommend avoiding setting up your syncing server from scratch with Nginx unl
 <p> &nbsp;If you would like to self-host the actual Standard Notes web application, visit the repository for the web app on GitHub:</p>
 <a href="https://github.com/standardnotes/web"><img src="https://img.shields.io/badge/Repository for the web app on GitHub-blue.svg?style=flat" alt="Repository for the web app on GitHub"></a>
 
-## Help me and contribution 🙌
-<p> &nbsp;If you have any problems with the operation of Standard Notes, please, open a <code>issue</code> here:</p>
+## Help me and contribution
+🙌 <p> &nbsp;If you have any problems with the operation of Standard Notes, please, open a <code>issue</code> here:</p>
 <a href="https://github.com/standardnotes/server/issues"><img src="https://img.shields.io/badge/issues standardnotes-green.svg?style=flat" alt="Link"></a>
 
-<p> &nbsp;If you want to contribute to improve the installation configuration with MariaDB, open a <code>issue</code> here:</p>
+🙌 <p> &nbsp;If you want to contribute to improve the installation configuration with MariaDB, open a <code>issue</code> here:</p>
 <a href="https://github.com/JuanRodenas/server-mariadb/issues"><img src="https://img.shields.io/badge/issues on repository-green.svg?style=flat" alt="Link"></a>
 
-## Credits 🚀
-<p> &nbsp;This repository is made with all my love and affection.
+## Credits
+🚀 <p> &nbsp;This repository is made with all my love and affection.
 <a href="https://github.com/JuanRodenas/"><img src="https://img.shields.io/badge/-JuanRodenas-171515?style=flat&logo=Github&logoColor=black&labelColor=ececec&color=ececec" alt="GitHub"></a>
 
 ## 🎉 ¡Ready!
