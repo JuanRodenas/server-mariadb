@@ -27,12 +27,13 @@ To get started with self-hosting our client applications, visit our app code rep
 Our self-hosted server infrastructure consists of several different microservices that are responsible for different sets of functionality. Our self-hosted server is only intended as the backend that processes and stores your data; it does not include self-hosting the web application, which is an optional process that must be done separately. You will be able to use our existing [web](https://app.standardnotes.com) and desktop app with your self-hosted server.
 
 ## Get Started using Docker
+In order to document the process, I have created a folder with different pages to document the process correctly.
 
-👉 **[Using our automated docker-compose setup with accompanying scripts](./docker.md)** 👈
+👉 *Using our automated docker-compose configuration with attached scripts*(./docker.md) configuration.[![Alt text](https://img.shields.io/badge/link-blue.svg?style=flat)](docs/docker.md)
+👉 *Install nginx and provide https to your instance* [![nginx](https://img.shields.io/badge/link-blue.svg?style=flat)](https-support.md)
+👉 *.* [![Alt text](https://img.shields.io/badge/link-blue.svg?style=flat)](docs/docker.md)
 
-If you'd like to learn more about each of the particular services, head over to [Infrastructure Overview](./infrastructure-overview.md).
-
-> **Note** Our setup also provides a running MySQL database and a Redis cache node. You do not have to provision these services on your own. For users that have been self-hosting a legacy version of our server, we've prepared a [Migrating from Legacy guide](./legacy-migration.md).
+> Note** Our configuration also provides a Redis cache node. I will provide help with that as well.
 
 ### Recommendations
 
@@ -43,7 +44,7 @@ If you are new to Docker, please see the [official Docker documentation](https:/
 We recommend avoiding setting up your syncing server from scratch with Nginx unless you are proficient with Nginx. Setting up the full architecture can be challenging without full knowledge of how the syncing server and its microservices function.
 
 ## Web application
-If you would like to self-host the actual Standard Notes web application, visit the repository for the web app on GitHub:
+<p> &nbsp;If you would like to self-host the actual Standard Notes web application, visit the repository for the web app on GitHub:</p>
 <a href="https://github.com/standardnotes/web"><img src="https://img.shields.io/badge/Repository for the web app on GitHub-blue.svg?style=flat" alt="Repository for the web app on GitHub"></a>
 
 ## HELP ME AND CONTRIBUTION 🙌
@@ -54,9 +55,8 @@ If you would like to self-host the actual Standard Notes web application, visit 
 <a href="https://github.com/JuanRodenas/server-mariadb/issues"><img src="https://img.shields.io/badge/issues on repository-green.svg?style=flat" alt="Link"></a>
 
 ## Credits 🚀
-This repository is made with all my love and affection.
-
-[![GitHub](https://img.shields.io/badge/-JuanRodenas-171515?style=flat&logo=Github&logoColor=black&labelColor=ececec&color=ececec)](https://github.com/JuanRodenas/)
+<p> &nbsp;This repository is made with all my love and affection.
+<a href="https://github.com/JuanRodenas/"><img src="https://img.shields.io/badge/-JuanRodenas-171515?style=flat&logo=Github&logoColor=black&labelColor=ececec&color=ececec" alt="GitHub"></a>
 
 ## 🎉 ¡Ready!
 &nbsp;
