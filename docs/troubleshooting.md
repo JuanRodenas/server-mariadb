@@ -9,15 +9,8 @@ sudo chmod -R 755 data/uploads && \
 sudo chown -R 1001.1001 data/uploads
 ```
 
-
-
 ### CREAR BACKUPS DE TU CUENTA.
 
 En Backups/Data backups
 Creamos un backups
 Si queremos recuperar el backup, extraemos el `.zip` y después seleccionamos el archivo: `Standard Notes Backup and Import File` y pulsamos Importar backup.
-
-<aside>
-💡 Nota informativa
-
-</aside>

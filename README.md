@@ -1,33 +1,34 @@
-# Server applications using Docker compose and MariaDB
+## Server applications using Docker compose and MariaDB
 
 <div align="center">
-    <a href="https://github.com/JuanRodenas/Pihole_list">
-        <img src="https://github.com/JuanRodenas/Pihole_list/blob/main/assets/pihole.png" alt="Pi-hole" width="280">
-        <img src="https://cdn.adtidy.org/website/github.com/AdguardFilters/viking.svg" alt="AdGuard Home" width="420">
+    <a href="https://github.com/JuanRodenas/server-mariadb">
+        <img src="https://github.com/JuanRodenas/server-mariadb/blob/main/assets/Standard%20Notes.png" alt="server" width="100%">
     </a>
     <br>
-    <h3>Network-wide ad blocking via its own hardware.</h3>
 </div>
 
 ## Table of contents
 
-- [Acceso a la CLI y comandos básicos](#acceso-a-la-cli-y-comandos-básicos)
-  - [Comandos básicos](#comandos-básicos)
-  - [Comandos VI](#comandos-básicos-de-vi)
-  - [Acceso GUI](#acceso-a-la-gui)
-  - [Certificado](#solucionar-problema-con-certificado-inválido)
-- [Configuración inicial del EdgeRouter](#configuración-inicial-del-edgerouter)
-  - [Reset fábrica](#realización-de-un-hardware-o-software-reset)
-  - [Actualizaciones](#actualizar-edgerouter)
+- [Docker version](#docker-version)
+  - [Version docker latest Standard Notes](#standard-notes)
+  - [Version docker localstack](#localstack)
+- [Requirements](#requirements)
+  - [Standard Notes Backend Infrastructure](#standard-notes-backend-infrastructure)
+  - [Self-hosting Standard Notes client applications](#self-hosting-standard-notes-client-applications)
+- [Get Started using Docker](#get-started-using-docker)
+- [Recommendations](#recommendations)
+- [Web application](#web-application)
+- [Contribution](#help-me-and-contribution)
+- [Credits](#credits)
   
 
 ## Docker version
 
-### Version docker latest Pi-hole®
-![Docker Image Version (tag latest)](https://img.shields.io/docker/v/pihole/pihole/latest?style=flat&logo=docker&logoColor=white&labelColor=0088cc&color=0088cc)
+### Standard Notes
+![Docker Image Version (tag latest)](https://img.shields.io/docker/r/standardnotes/server/latest?style=flat&logo=docker&logoColor=white&labelColor=0088cc&color=0088cc)
 
-### Version docker latest Adguard Home®
-![Docker Image Version (tag latest)](https://img.shields.io/docker/v/adguard/adguardhome/latest?style=flat&logo=docker&logoColor=white&labelColor=0088cc&color=0088cc)
+### Localstack
+![Docker Image Version (tag latest)](https://img.shields.io/docker/r/localstack/localstack/latest?style=flat&logo=docker&logoColor=white&labelColor=0088cc&color=0088cc)
 
 ## Requirements
 
@@ -35,7 +36,8 @@ Can I self-host Standard Notes?
 
 *Yes! Self-hosting both the app and server is possible and relatively simple.*
 There are two components to the self-hosted infrastructure:
-#### Standard Notes Backend Infrastructure
+
+### Standard Notes Backend Infrastructure
 
 The first is the backend infrastructure. The backend is zero-knowledge, which means it does not understand the contents of what it is storing. Any user content received by the server is always encrypted by the client beforehand.
 
@@ -44,7 +46,7 @@ Get started with self-hosting your own Standard Notes server:
 
 - Deploying a private Standard Notes server using [Docker](#Get-Started-using-Docker)
 
-#### Self-hosting Standard Notes client applications
+### Self-hosting Standard Notes client applications
 
 Because the client applications (desktop, web, and mobile) allow the option of specifying which server to connect to, self-hosting the client applications is not as common as self-hosting the server. If you were to go down this route, the paths you might take are:
 
@@ -63,10 +65,10 @@ In order to document the process, I have created a folder with different pages t
 <p> &nbsp;👉 <em>Configuring the MariaDB database and file uploads.</em>	<a href="docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a></p>
 <p> &nbsp;👉 <em>Troubleshooting page.</em> <a href="docs/troubleshooting.md">	<img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a></p>
 
-<aside>
-💡 <strong>Informative note</strong>
-	<p>&nbsp;&nbsp;Our configuration also provides a Redis cache node. I will provide help with that as well.</p>
-</aside>
+<blockquote>
+💡 <strong>Informative note:</strong>
+<p>&nbsp;&nbsp;Our configuration also provides a Redis cache node. I will provide help with that as well.</p>
+</blockquote>
 
 ## Recommendations
 
@@ -80,7 +82,7 @@ We recommend avoiding setting up your syncing server from scratch with Nginx unl
 <p> &nbsp;If you would like to self-host the actual Standard Notes web application, visit the repository for the web app on GitHub:</p>
 <a href="https://github.com/standardnotes/web"><img src="https://img.shields.io/badge/Repository for the web app on GitHub-blue.svg?style=flat" alt="Repository for the web app on GitHub"></a>
 
-## HELP ME AND CONTRIBUTION 🙌
+## Help me and contribution 🙌
 <p> &nbsp;If you have any problems with the operation of Standard Notes, please, open a <code>issue</code> here:</p>
 <a href="https://github.com/standardnotes/server/issues"><img src="https://img.shields.io/badge/issues standardnotes-green.svg?style=flat" alt="Link"></a>
 
@@ -94,5 +96,6 @@ We recommend avoiding setting up your syncing server from scratch with Nginx unl
 ## 🎉 ¡Ready!
 &nbsp;
 
+<p>💡 <strong>Informative note:</strong></p>
 <p><sup>These files/texts are provided "AS IS", without warranties of any kind, express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose and non-infringement. In no event shall the authors or copyright holders be liable for any claims, damages or other liability arising out of or relating to the files or the use thereof.</sup></p>
 <p><sub>Any and all trademarks are the property of their respective owners.</sub></p>

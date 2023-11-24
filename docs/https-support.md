@@ -38,10 +38,10 @@ These instructions will enable you to secure HTTP traffic of your standalone inf
   ```
 
 
-<aside>
+<blockquote>
 💡 <strong>Informative note</strong>
-	<p>&nbsp;&nbsp;Replace <code>yourdomain.com</code> with your actual domain and <code>3000</code> with the port you have specified as <code>{EXPOSED_PORT}</code> if you have changed it.</p>
-</aside>
+<p>&nbsp;&nbsp;Replace <code>yourdomain.com</code> with your actual domain and <code>3000</code> with the port you have specified as <code>{EXPOSED_PORT}</code> if you have changed it.</p>
+</blockquote>
 
 1. Enable your new site:
 
