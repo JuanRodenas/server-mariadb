@@ -1,4 +1,10 @@
-### Introduction
+## Introduction
+<div align="center">
+    <a href="https://github.com/JuanRodenas/server-mariadb">
+        <img src="https://github.com/JuanRodenas/server-mariadb/blob/main/assets/Art/encryption-graphic.jpg" alt="server" width="100%">
+    </a>
+    <br>
+</div>
 
 These instructions will allow you to secure HTTP traffic from your standalone infrastructure, using a reverse proxy with `Nginx`.
 

@@ -62,7 +62,7 @@ Our self-hosted server infrastructure consists of several different microservice
 ## Get Started using Docker
 <aside>
 💡 <strong>Informative note:</strong>
-<p>The above steps are based on a network that may differ from the one you have set up. If you follow all the steps to the letter, they may not match the configuration of your network and render it unusable. Always adapt the above documentation to match your network..</p>
+<p>The steps based on this documentation may differ from the network you have configured. If you follow all the steps to the letter, they may not match your network configuration and render the Standard Notes Docker container unusable. Always adapt the documentation to match your network and configuration.</p>
 </aside>
 
 In order to document the process, I have created a folder with different pages to document the process correctly.
@@ -92,14 +92,14 @@ We recommend avoiding setting up your syncing server from scratch with Nginx unl
 <a href="https://github.com/standardnotes/web"><img src="https://img.shields.io/badge/Repository for the web app on GitHub-blue.svg?style=flat" alt="Repository for the web app on GitHub"></a>
 
 ## Help me and contribution
-🙌 <p> &nbsp;If you have any problems with the operation of Standard Notes, please, open a <code>issue</code> here:</p>
+<p>🙌 &nbsp;If you have any problems with the operation of Standard Notes, please, open a <code>issue</code> here:</p>
 <a href="https://github.com/standardnotes/server/issues"><img src="https://img.shields.io/badge/issues standardnotes-green.svg?style=flat" alt="Link"></a>
 
-🙌 <p> &nbsp;If you want to contribute to improve the installation configuration with MariaDB, open a <code>issue</code> here:</p>
+<p>🙌 &nbsp;If you want to contribute to improve the installation configuration with MariaDB, open a <code>issue</code> here:</p>
 <a href="https://github.com/JuanRodenas/server-mariadb/issues"><img src="https://img.shields.io/badge/issues on repository-green.svg?style=flat" alt="Link"></a>
 
 ## Credits
-🚀 <p> &nbsp;This repository is made with all my love and affection.
+<p>🚀 &nbsp;This repository is made with all my love and affection.
 <a href="https://github.com/JuanRodenas/"><img src="https://img.shields.io/badge/-JuanRodenas-171515?style=flat&logo=Github&logoColor=black&labelColor=ececec&color=ececec" alt="GitHub"></a>
 
 ## 🎉 ¡Ready!

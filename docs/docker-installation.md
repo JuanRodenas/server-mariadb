@@ -1,4 +1,10 @@
 ## Requirements
+<div align="center">
+    <a href="https://github.com/JuanRodenas/server-mariadb">
+        <img src="https://github.com/JuanRodenas/server-mariadb/blob/main/assets/Art/cyborg-factory.jpg" alt="server" width="100%">
+    </a>
+    <br>
+</div>
 
 **Instructions for setting up a Standard Notes infrastructure with Docker on a Linux server**.
 

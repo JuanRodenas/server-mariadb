@@ -1,3 +1,11 @@
+## troubleshooting
+<div align="center">
+    <a href="https://github.com/JuanRodenas/server-mariadb">
+        <img src="https://github.com/JuanRodenas/server-mariadb/blob/main/assets/Art/journalist-graphic.jpg" alt="server" width="100%">
+    </a>
+    <br>
+</div>
+
 ### Upload directory write permissions
 The default upload directory is located inside the standalone folder under `data/uploads`. Depending on the running OS, you might encounter write permissions to that folder by the application. In that case the following commands might help:
 

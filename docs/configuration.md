@@ -1,3 +1,11 @@
+## configuration
+<div align="center">
+    <a href="https://github.com/JuanRodenas/server-mariadb">
+        <img src="https://github.com/JuanRodenas/server-mariadb/blob/main/assets/Art/legal-graphic.jpg" alt="server" width="100%">
+    </a>
+    <br>
+</div>
+
 ## Documentation to deploy with MariaDB:
 ```bash
 db:
