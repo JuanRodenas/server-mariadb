@@ -1,22 +1,3 @@
----
-slug: https-support
-id: https-support
-title: Securing HTTP traffic of your Sync server
-sidebar_label: Securing HTTP traffic of your Sync server
-description: How to secure HTTP traffic of your Standard Notes Sync server.
-keywords:
-  - standard notes
-  - docs
-  - notes app
-  - end-to-end encryption
-  - self-hosting
-  - sync server
-  - secure http traffic
-image: /img/logo.png
-hide_title: false
-hide_table_of_contents: false
----
-
 ### Introduction
 
 These instructions will enable you to secure HTTP traffic of your standalone infrastructure, using a reverse proxy with `Nginx`.
@@ -39,7 +20,7 @@ These instructions will enable you to secure HTTP traffic of your standalone inf
 
 1. Create a new file named `standardnotes.conf` within `/etc/nginx/sites-available`:
 
-  ```
+  ```shell
   server {
     listen 80;
     listen [::]:80;
@@ -91,3 +72,11 @@ These instructions will enable you to secure HTTP traffic of your standalone inf
 In the account menu, choose `Advanced Options` and enter the address of your new server in `Sync Server Domain`.
 
 Then, register for a new account or log into an existing account and begin using your private new secure Standard Notes server!
+
+### CloudFlare Missing Headers
+
+When using CloudFlare in conjuction with Nginx you might encounter an issue about missing `Accept-Ranges` header which is required for file downloading. As a fix please add this to your Nginx configuration:
+
+```shell
+proxy_cache off;
+```

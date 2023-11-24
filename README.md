@@ -1,5 +1,34 @@
 # Server applications using Docker compose and MariaDB
 
+<div align="center">
+    <a href="https://github.com/JuanRodenas/Pihole_list">
+        <img src="https://github.com/JuanRodenas/Pihole_list/blob/main/assets/pihole.png" alt="Pi-hole" width="280">
+        <img src="https://cdn.adtidy.org/website/github.com/AdguardFilters/viking.svg" alt="AdGuard Home" width="420">
+    </a>
+    <br>
+    <h3>Network-wide ad blocking via its own hardware.</h3>
+</div>
+
+## Table of contents
+
+- [Acceso a la CLI y comandos básicos](#acceso-a-la-cli-y-comandos-básicos)
+  - [Comandos básicos](#comandos-básicos)
+  - [Comandos VI](#comandos-básicos-de-vi)
+  - [Acceso GUI](#acceso-a-la-gui)
+  - [Certificado](#solucionar-problema-con-certificado-inválido)
+- [Configuración inicial del EdgeRouter](#configuración-inicial-del-edgerouter)
+  - [Reset fábrica](#realización-de-un-hardware-o-software-reset)
+  - [Actualizaciones](#actualizar-edgerouter)
+  
+
+## Docker version
+
+### Version docker latest Pi-hole®
+![Docker Image Version (tag latest)](https://img.shields.io/docker/v/pihole/pihole/latest?style=flat&logo=docker&logoColor=white&labelColor=0088cc&color=0088cc)
+
+### Version docker latest Adguard Home®
+![Docker Image Version (tag latest)](https://img.shields.io/docker/v/adguard/adguardhome/latest?style=flat&logo=docker&logoColor=white&labelColor=0088cc&color=0088cc)
+
 ## Requirements
 
 Can I self-host Standard Notes?
@@ -29,13 +58,14 @@ Our self-hosted server infrastructure consists of several different microservice
 ## Get Started using Docker
 In order to document the process, I have created a folder with different pages to document the process correctly.
 
-👉 *Using our automated docker-compose configuration with attached scripts*(./docker.md) configuration.[![Alt text](https://img.shields.io/badge/link-blue.svg?style=flat)](docs/docker.md)
-👉 *Install nginx and provide https to your instance* [![nginx](https://img.shields.io/badge/link-blue.svg?style=flat)](https-support.md)
-👉 *.* [![Alt text](https://img.shields.io/badge/link-blue.svg?style=flat)](docs/docker.md)
+<p> &nbsp;👉 *Using our docker-compose configuration with MariaDB.*<a href="docs/docker-installation.md"><img src="https://img.shields.io/badge/docker installation-blue.svg?style=flat" alt="installation"></a></p>
+<p> &nbsp;👉 *Install nginx and provide https to your instance.* <a href="docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a></p>
+<p> &nbsp;👉 *Configuring the MariaDB database and file uploads.* <a href="docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a></p>
+<p> &nbsp;👉 *Troubleshooting page.* <a href="docs/troubleshooting.md"><img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a></p>
 
-> Note** Our configuration also provides a Redis cache node. I will provide help with that as well.
+> **Note** Our configuration also provides a Redis cache node. I will provide help with that as well.
 
-### Recommendations
+## Recommendations
 
 We highly recommend you use our Docker setup to host your syncing server. Docker containers are isolated software environments that you can control and manage.
 
