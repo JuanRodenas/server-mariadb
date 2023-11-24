@@ -58,12 +58,15 @@ Our self-hosted server infrastructure consists of several different microservice
 ## Get Started using Docker
 In order to document the process, I have created a folder with different pages to document the process correctly.
 
-<p> &nbsp;👉 *Using our docker-compose configuration with MariaDB.*<a href="docs/docker-installation.md"><img src="https://img.shields.io/badge/docker installation-blue.svg?style=flat" alt="installation"></a></p>
-<p> &nbsp;👉 *Install nginx and provide https to your instance.* <a href="docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a></p>
-<p> &nbsp;👉 *Configuring the MariaDB database and file uploads.* <a href="docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a></p>
-<p> &nbsp;👉 *Troubleshooting page.* <a href="docs/troubleshooting.md"><img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a></p>
+<p> &nbsp;👉 <em>Using our docker-compose configuration with MariaDB.</em>	<a href="docs/docker-installation.md"><img src="https://img.shields.io/badge/docker installation-blue.svg?style=flat" alt="installation"></a></p>
+<p> &nbsp;👉 <em>Install nginx and provide https to your instance.</em>	<a href="docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a></p>
+<p> &nbsp;👉 <em>Configuring the MariaDB database and file uploads.</em>	<a href="docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a></p>
+<p> &nbsp;👉 <em>Troubleshooting page.</em> <a href="docs/troubleshooting.md">	<img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a></p>
 
-> **Note** Our configuration also provides a Redis cache node. I will provide help with that as well.
+<aside>
+💡 <strong>Informative note</strong>
+	<p>&nbsp;&nbsp;Our configuration also provides a Redis cache node. I will provide help with that as well.</p>
+</aside>
 
 ## Recommendations
 
