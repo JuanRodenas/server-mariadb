@@ -56,10 +56,10 @@ services:
     container_name: stand_cache 
     restart: unless-stopped
     volumes:
-      - cache-stdnote:/data
+      - cache-notes:/data
     networks:
       - internal
 
 volumes:
   cache-notes:
-    name: "cache-stdnote"
+    name: "cache-notes"
