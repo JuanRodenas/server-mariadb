@@ -26,10 +26,11 @@ First we download the readme files:
 +--- nginx.conf
 ```
 
-You can download the files again for nginx [files nginx](https://github.com/JuanRodenas/server-mariadb/tree/main/nginx)
-```bash
-wget https://github.com/JuanRodenas/server-mariadb/tree/main/nginx
-```
+You can download the files again for nginx:
+<pre><p><a href="https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip?raw=true"><img src="https://img.shields.io/badge/Download-nginx.zip-green.svg?style=flat&logo=download" alt="Download"></a></p>
+<code class="lang-bash">
+wget https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip && unzip nginx.zip
+</code></pre>
 
 We modify the server_name of the files:
 `nginx/conf.d`
