@@ -27,8 +27,8 @@ First we download the readme files:
 ```
 
 You can download the files again for nginx:
-<p>&ensp;<a href="https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip?raw=true"><img src="https://img.shields.io/badge/Download-nginx.zip-green.svg?style=flat&logo=download" alt="Download"></a></p>
-<pre>&ensp;<code class="lang-bash">
+<p>&nbsp;<a href="https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip?raw=true"><img src="https://img.shields.io/badge/Download-nginx.zip-green.svg?style=flat&logo=download" alt="Download"></a></p>
+<pre>&nbsp;<code class="lang-bash">
 wget https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip && unzip nginx.zip
 </code></pre>
 
@@ -118,15 +118,19 @@ In order to use HTTPS on your standard note server, you have two options, use yo
 	```
 2. Setting up Certbot for HTTPS configuration:
 Go to [certbot](https://certbot.eff.org/instructions) to get and install your HTTPS certificate. Certbot should automatically update your Nginx configuration and create SSL certificates for you. If you have not used cerbot, I have a tutorial in my adguard home repository to create a certificate with cerbot, in the following link:
-<p>&ensp;<a href="https://github.com/JuanRodenas/Pihole_list#create-the-certificate-with-lets-encrypt"><img src="https://img.shields.io/badge/create the certificate with lets encrypt-blue.svg?style=flat" alt="letsencrypt"></a></p>
+
+	[![letsencrypt](https://img.shields.io/badge/createthecertificatewithletsencrypt-blue.svg?style=flat)](https://github.com/JuanRodenas/Pihole_list#create-the-certificate-with-lets-encrypt)
 
 3. Once the certificates have been created, we will proceed to send the files in the docker compose to the container as in the example:
-<pre><code class="lang-bash"><span class="hljs-symbol">volumes:</span>
-    - <span class="hljs-regexp">/etc/localtime</span><span class="hljs-symbol">:/etc/localtime</span><span class="hljs-symbol">:ro</span>
-    - <span class="hljs-regexp">/etc/timezone</span><span class="hljs-symbol">:/etc/timezone</span><span class="hljs-symbol">:ro</span>
-    - <span class="hljs-regexp">/path/to</span><span class="hljs-regexp">/data/nginx</span><span class="hljs-symbol">:/etc/nginx</span>
-    - <span class="hljs-regexp">/path/to</span><span class="hljs-regexp">/data/certs</span><span class="hljs-symbol">:/etc/nginx/certs</span>
-</code></pre>
+
+	```bash
+	volumes:
+	- /etc/localtime:/etc/localtime:ro
+	- /etc/timezone:/etc/timezone:ro
+	- /path/to/data/nginx:/etc/nginx
+	- /path/to/data/certs:/etc/nginx/certs
+	```
+
 <aside>
 💡 <strong>Informative note:</strong>
 <p>&ensp;If you want to send the <code>lets encrypt</code> folder, change the <code>/path/to/data/certs:</code> to <code>/etc/letsencrypt/live/yourdomain.com:</code>.</p>
