@@ -52,7 +52,7 @@ ports:
 There may be different ways to restart Nginx. If you installed Nginx from Ubuntu's default repository just type:
 
 ```bash
-docker compose down && docker compose rm && sleep 2 docker compose up -d
+docker compose down && docker compose rm && sleep && docker compose up -d
 ```
 
 1. Test your `Nginx` configuration with:
