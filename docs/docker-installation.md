@@ -42,7 +42,7 @@ chmod +x localstack_bootstrap.sh
 </code></pre>
 
 4. Copy the `docker-compose.yml` working folder:
-<p><a href="https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/docker-compose.yml?raw=true"><img src="https://img.shields.io/badge/Download-docker-compose.yml-green.svg?style=flat&logo=download" alt="Download"></a></p>
+<p><a href="https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/docker-compose.yml?raw=true"><img src="https://img.shields.io/badge/Download-docker compose.yml-green.svg?style=flat&logo=download" alt="Download"></a></p>
 <pre><code class="lang-bash">
 curl https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/docker-compose.yml -o docker-compose.yml
 </code></pre>

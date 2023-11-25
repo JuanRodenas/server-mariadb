@@ -144,7 +144,7 @@ Go to [certbot](https://certbot.eff.org/instructions) to get and install your HT
 
 <aside>
 💡 <strong>Informative note:</strong>
-<p>&nbsp;&nbsp;If you install Traefik, check the sample configuration of the repository.</code>.</p>
+<p>&nbsp;&nbsp;If you install Traefik, check the repository sample configuration with your configuration, they may not match.</code>.</p>
 </aside>
 
 2. Then we will modify the server_name to be able to redirect to our local IP.
