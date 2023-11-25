@@ -13,7 +13,7 @@ These instructions are based on the following assumptions:
 - The machine you are going to run the infrastructure on has at least 2 GB of memory.
 - Set up a Linux server (Ubuntu 20.04 64-bit or later).
 - Install Docker and Docker Compose on it.
-	- For more information on how to configure Docker and Docker Compose, please refer to the official [Docker] documentation (https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository).
+	- For more information on how to configure Docker and Docker Compose, please refer to the official documentation [Docker](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository).
 - You have configured your security groups to allow incoming TCP connections on ports 80 and 443 from at least your local IP.
 - You have configured a domain name (or subdomain) to point to your server's IP address.
 -  For more information on how to set up security groups on your server, see your hosting provider's documentation. If you want to run it as a non-root user, remember the post-installation steps for Linux: [link](https://docs.docker.com/engine/install/linux-postinstall#manage-docker-as-a-non-root-user)
@@ -23,13 +23,13 @@ These instructions are based on the following assumptions:
  
 1. Create a `folder` where you want to store your working files. We will refer to this folder as your working directory.
 ```bash
- mkdir standardnotes
+mkdir standardnotes && \
 cd standardnotes
 ```
 
 2. Create a `.env` file in your working directory. Then copy our example values to your file:
 ```bash
-touch .env
+touch .env && \
 curl https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/.env.sample -o .env
 ```
 
@@ -52,12 +52,12 @@ curl https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/docker-co
 ## Configuration .env and docker-compose.yml
 
 1. Change the database password:
-	1.1 Edit the DB data in the `.env` file.
-	1.2 In order to configure the .env file, please refer to the configuration readme. <a href="docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a>
-2. Configure the nginx files from the https readme: <a href="docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a>
-3. Configure the database files and uploads file from the readme: <a href="docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a>
-4. In order to solve the problems you can check the readme: <a href="docs/troubleshooting.md"><img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a>
+	- Edit the DB data in the `.env` file.
+	- In order to configure the .env file, please refer to the configuration readme. <a href="./docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a>
+2. Configure the nginx files from the https readme: <a href="./docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a>
+3. Configure the database files and uploads file from the readme: <a href="./docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a>
+4. In order to solve the problems you can check the readme: <a href="./docs/troubleshooting.md"><img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a>
 
 ## Configure nginx with reverse proxy
 <p>To configure nginx with reverse proxy, please refer to the following readme:</p>
-<p><a href="docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a></p>
+<p><a href="./docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a></p>

@@ -99,7 +99,7 @@ We recommend avoiding setting up your syncing server from scratch with Nginx unl
 <a href="https://github.com/JuanRodenas/server-mariadb/issues"><img src="https://img.shields.io/badge/issues on repository-green.svg?style=flat" alt="Link"></a>
 
 ## Credits
-<p>🚀 &nbsp;This repository is made with all my love and affection.
+<p>🚀 &nbsp;This repository is made with all my love and affection.</p>
 <a href="https://github.com/JuanRodenas/"><img src="https://img.shields.io/badge/-JuanRodenas-171515?style=flat&logo=Github&logoColor=black&labelColor=ececec&color=ececec" alt="GitHub"></a>
 
 ## 🎉 ¡Ready!

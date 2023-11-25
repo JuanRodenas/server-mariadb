@@ -22,16 +22,16 @@ sudo chown -R 1001.1001 data/uploads
 - If we want to recover the backup, extract the `.zip` and then select the file: `Standard Notes Backup and Import File` and click on Import backup.
 
 
-Frequently Asked Questions:** ** What if I don't have 2 GB of memory?
+**Frequently Asked Questions**
 
-* What if I don't have 2 GB of memory?
+- What if I don't have 2 GB of memory?
 
 If your machine does not have 2 GB of memory, the infrastructure may not work properly. In this case, you can try to reduce the number of containers running at the same time.
 
-* What if I don't have a domain name?
+- What if I don't have a domain name?
 
 If you do not have a domain name, you can access the infrastructure through its local IP address. To do this, open your web browser and type the IP address of your server in the address bar.
 
-* What if I have not configured my security groups?
+- What if I have not configured my security groups?
 
 If you have not configured your security groups, you may not be able to access the infrastructure. In this case, please refer to your hosting provider's documentation for instructions on how to set up security groups.

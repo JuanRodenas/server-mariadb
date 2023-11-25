@@ -28,7 +28,7 @@ First we download the readme files:
 
 Download the files for nginx [files nginx](https://github.com/JuanRodenas/server-mariadb/tree/main/nginx)
 ```bash
-curl https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/docker-compose.yml -o docker-compose.yml
+wge https://github.com/JuanRodenas/server-mariadb/tree/main/nginx
 ```
 
 We modify the server_name of the files:
@@ -36,7 +36,7 @@ We modify the server_name of the files:
 	+--- standardnotes-files.conf
 	+--- standardnotes.conf
 
-<blockquote>
+<aside>
 💡 <strong>Informative note</strong>
 <p>&nbsp;&nbsp;Replace <code>fqdn.example.org</code> or <code>fqdn1.example.org</code> with your actual domain
 <p>&nbsp;&nbsp;Replace port <code>80 for the server</code> and <code>3125 for the files</code> you have specified in the docker compose, if you have changed it. Here the docker-compose snippet, changed to <code>81</code> and <code>8080</code>.
@@ -45,7 +45,7 @@ We modify the server_name of the files:
       - 81:80
       - 8080:3125
 </code></pre>
-</blockquote>
+</aside>
 1. Restart Nginx to apply changes
 
 There may be different ways to restart Nginx. If you installed Nginx from Ubuntu's default repository just type:
@@ -61,6 +61,7 @@ docker exec -u root -t -i stand_nginx /bin/bash
 nginx -t
 ```
 <p>nginx useful command:</p>
+
 - `nginx -s reload`: Reloads the nginx configuration without interrupting the service.
 - `nginx -t`: Checks the nginx configuration syntax.
 - `nginx -T`: Displays the current nginx configuration.
@@ -78,16 +79,17 @@ In order to use HTTPS on your standard note server, you have two options, use yo
 1. In order to use nginx and https locally, we must use the server ip and a certificate, I will explain with cerbot (lets encrypt).
 	1.1 First we will use port 443 instead of port 80.
 	```bash
-		    ports:
+	ports:
       - 443:443
       - 3125:3125
 	```
-	1.2 Then we will modify the server_name to be able to redirect to our local IP.
-	standardnotes.conf
+	1.2 Then we will modify the server_name to be able to redirect to our local IP. Change the IP of the example to your server ip.
+	
+	- standardnotes.conf
 	```bash
     server_name 127.0.0.1;
 	```
-	standardnotes-files.conf
+	- standardnotes-files.conf
 	```bash
     server_name 127.0.0.1;
 	```
@@ -115,6 +117,7 @@ In order to use HTTPS on your standard note server, you have two options, use yo
 Go to [certbot](https://certbot.eff.org/instructions) to get and install your HTTPS certificate. Certbot should automatically update your Nginx configuration and create SSL certificates for you.
 <p>If you have not used cerbot, I have a tutorial in my adguard home repository to create a certificate with cerbot, in the following link:</p>
 <a href="https://github.com/JuanRodenas/Pihole_list#create-the-certificate-with-lets-encrypt"><img src="https://img.shields.io/badge/create the certificate with lets encrypt-blue.svg?style=flat" alt="letsencrypt"></a>
+
 	2.1 Once the certificates have been created, we will proceed to send the files in the docker compose to the container as in the example:
 	```bash
     volumes:
@@ -123,6 +126,7 @@ Go to [certbot](https://certbot.eff.org/instructions) to get and install your HT
       - /path/to/data/nginx:/etc/nginx
       - /path/to/data/certs:/etc/nginx/certs
 	```
+	
 	<aside>
 	💡 <strong>Informative note:</strong>
 	<p>&nbsp;&nbsp;If you want to send the <code>lets encrypt</code> folder, change the <code>/path/to/data</code> to <code>/path/to/data</code>.</p>
@@ -143,12 +147,14 @@ Go to [certbot](https://certbot.eff.org/instructions) to get and install your HT
 You can install Traefik from the repository I have created for this purpose. <a href="https://github.com/JuanRodenas/selfhosted/tree/main/traefik"><img src="https://img.shields.io/badge/traefik-blue.svg?style=flat" alt="traefik"></a>
 
 2. Then we will modify the server_name to be able to redirect to our local IP.
+
 	**Example:**
-	standardnotes.conf
+
+	- standardnotes.conf
 	```bash
     server_name fqdn.example.org;
 	```
-	standardnotes-files.conf
+	- standardnotes-files.conf
 	```bash
     server_name fqdn1.example.org;
 	```
