@@ -27,8 +27,8 @@ First we download the readme files:
 ```
 
 You can download the files again for nginx:
-&ensp;<p><a href="https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip?raw=true"><img src="https://img.shields.io/badge/Download-nginx.zip-green.svg?style=flat&logo=download" alt="Download"></a></p>
-&ensp;<pre><code class="lang-bash">
+<p>&ensp;<a href="https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip?raw=true"><img src="https://img.shields.io/badge/Download-nginx.zip-green.svg?style=flat&logo=download" alt="Download"></a></p>
+<pre>&ensp;<code class="lang-bash">
 wget https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip && unzip nginx.zip
 </code></pre>
 
@@ -118,7 +118,7 @@ In order to use HTTPS on your standard note server, you have two options, use yo
 	```
 2. Setting up Certbot for HTTPS configuration:
 Go to [certbot](https://certbot.eff.org/instructions) to get and install your HTTPS certificate. Certbot should automatically update your Nginx configuration and create SSL certificates for you. If you have not used cerbot, I have a tutorial in my adguard home repository to create a certificate with cerbot, in the following link:
-&ensp;<p><a href="https://github.com/JuanRodenas/Pihole_list#create-the-certificate-with-lets-encrypt"><img src="https://img.shields.io/badge/create the certificate with lets encrypt-blue.svg?style=flat" alt="letsencrypt"></a></p>
+<p>&ensp;<a href="https://github.com/JuanRodenas/Pihole_list#create-the-certificate-with-lets-encrypt"><img src="https://img.shields.io/badge/create the certificate with lets encrypt-blue.svg?style=flat" alt="letsencrypt"></a></p>
 
 3. Once the certificates have been created, we will proceed to send the files in the docker compose to the container as in the example:
 <pre><code class="lang-bash"><span class="hljs-symbol">volumes:</span>
@@ -141,12 +141,12 @@ Go to [certbot](https://certbot.eff.org/instructions) to get and install your HT
 
 #### HTTPS on your standard note server with a reverse proxy
 1. We can install a reverse proxy, such as traefik. Traefik puede utilizar un proveedor ACME (como Let's Encrypt) para la generación automática de certificados. Creará el certificado e intentará renovarlo automáticamente 30 días antes de su vencimiento. Uno de los grandes beneficios de usar desafíos DNS es que nos permitirá usar certificados comodín; por otro lado, puede crear un riesgo de seguridad ya que requiere otorgar derechos a Traefik para crear y eliminar algunos registros DNS.
-&ensp;<p>You can install Traefik from the repository I have created for this purpose.</p>
-&ensp;<p><a href="https://github.com/JuanRodenas/selfhosted/tree/main/traefik"><img src="https://img.shields.io/badge/traefik-blue.svg?style=flat" alt="traefik"></a></p>
+<p>You can install Traefik from the repository I have created for this purpose.</p>
+<p>&ensp;<a href="https://github.com/JuanRodenas/selfhosted/tree/main/traefik"><img src="https://img.shields.io/badge/traefik-blue.svg?style=flat" alt="traefik"></a></p>
 
 <aside>
 💡 <strong>Informative note:</strong>
-<p>&nbsp;&nbsp;If you install Traefik, check the repository sample configuration with your configuration, they may not match.</code></p>
+<p>&ensp;If you install Traefik, check the repository sample configuration with your configuration, they may not match.</code></p>
 </aside>
 
 2. Then we will modify the server_name to be able to redirect to our local IP.
