@@ -23,10 +23,10 @@
   
 
 ## Docker version
+Latest version of docker updated by its developer.
 
 ### Standard Notes
 ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/standardnotes/server/latest?style=flat&logo=docker&logoColor=white&label=standard%20notes&labelColor=0088cc&color=0088cc)
-
 
 ### Localstack
 ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/localstack/localstack/latest?style=flat&logo=docker&logoColor=white&label=localstack&labelColor=0088cc&color=0088cc)
@@ -46,7 +46,7 @@ The first is the backend infrastructure. The backend is zero-knowledge, which me
 The server is responsible for authentication and syncing. When you self-host your own server, the end result will be an endpoint that you expose via HTTPS. You enter this endpoint in the Standard Notes client applications in the Custom sync server field (found under Advanced options when signing in or registering).
 Get started with self-hosting your own Standard Notes server:
 
-- Deploying a private Standard Notes server using [Docker](#Get-Started-using-Docker)
+- Deploying a private Standard Notes server using [Docker](#get-started-using-docker)
 
 ### Self-hosting Standard Notes client applications
 
@@ -62,15 +62,17 @@ Our self-hosted server infrastructure consists of several different microservice
 ## Get Started using Docker
 <aside>
 💡 <strong>Informative note:</strong>
-<p>&nbsp;&nbsp;The above steps are based on a network that may differ from the one you have set up. If you follow all the steps to the letter, they may not match the configuration of your network and render it unusable. Always adapt the above documentation to match your network..</p>
+<p>The steps based on this documentation may differ from the network you have configured. If you follow all the steps to the letter, they may not match your network configuration and render the Standard Notes Docker container unusable. Always adapt the documentation to match your network and configuration.</p>
 </aside>
 
 In order to document the process, I have created a folder with different pages to document the process correctly.
 
-<p> &nbsp;👉 <em>Using our docker-compose configuration with MariaDB.</em>	<a href="docs/docker-installation.md"><img src="https://img.shields.io/badge/docker installation-blue.svg?style=flat" alt="installation"></a></p>
-<p> &nbsp;👉 <em>Install nginx and provide https to your instance.</em>	<a href="docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a></p>
-<p> &nbsp;👉 <em>Configuring the MariaDB database and file uploads.</em>	<a href="docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a></p>
-<p> &nbsp;👉 <em>Troubleshooting page.</em> <a href="docs/troubleshooting.md"><img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a></p>
+| pages | readme |
+| :-- | :--: |
+| 👉 <em>Using our docker-compose configuration with MariaDB.</em> | <a href="docs/docker-installation.md"><img src="https://img.shields.io/badge/docker installation-blue.svg?style=flat" alt="installation"></a> |
+| 👉 <em>Install nginx and provide https to your instance.</em> | <a href="docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a> |
+| 👉 <em>Configuring the MariaDB database and file uploads.</em> | 	<a href="docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a> |
+| 👉 <em>Troubleshooting page.</em> | <a href="docs/troubleshooting.md"><img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a> |
 
 <aside>
 💡 <strong>Informative note:</strong>
@@ -90,19 +92,21 @@ We recommend avoiding setting up your syncing server from scratch with Nginx unl
 <a href="https://github.com/standardnotes/web"><img src="https://img.shields.io/badge/Repository for the web app on GitHub-blue.svg?style=flat" alt="Repository for the web app on GitHub"></a>
 
 ## Help me and contribution
-🙌 <p> &nbsp;If you have any problems with the operation of Standard Notes, please, open a <code>issue</code> here:</p>
+<p>🙌 &nbsp;If you have any problems with the operation of Standard Notes, please, open a <code>issue</code> here:</p>
 <a href="https://github.com/standardnotes/server/issues"><img src="https://img.shields.io/badge/issues standardnotes-green.svg?style=flat" alt="Link"></a>
 
-🙌 <p> &nbsp;If you want to contribute to improve the installation configuration with MariaDB, open a <code>issue</code> here:</p>
+<p>🙌 &nbsp;If you want to contribute to improve the installation configuration with MariaDB, open a <code>issue</code> here:</p>
 <a href="https://github.com/JuanRodenas/server-mariadb/issues"><img src="https://img.shields.io/badge/issues on repository-green.svg?style=flat" alt="Link"></a>
 
 ## Credits
-🚀 <p> &nbsp;This repository is made with all my love and affection.
-<a href="https://github.com/JuanRodenas/"><img src="https://img.shields.io/badge/-JuanRodenas-171515?style=flat&logo=Github&logoColor=black&labelColor=ececec&color=ececec" alt="GitHub"></a>
+<p>🚀 &nbsp;This repository is made with all my love and affection.</p>
+<a href="https://github.com/JuanRodenas/"><img src="https://img.shields.io/badge/-JuanRodenas-171515?style=flat&logo=Github&logoColor=white&labelColor=black&color=ffbf00" alt="GitHub"></a>
 
 ## 🎉 ¡Ready!
+<div align="center">
+<p><img src="https://github.com/JuanRodenas/server-mariadb/blob/main/assets/Logos/Logo.png" alt="server" width="200"></p>
+</div>
 &nbsp;
-
 <p>💡 <strong>Informative note:</strong></p>
 <p><sup>These files/texts are provided "AS IS", without warranties of any kind, express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose and non-infringement. In no event shall the authors or copyright holders be liable for any claims, damages or other liability arising out of or relating to the files or the use thereof.</sup></p>
-<p><sub>Any and all trademarks are the property of their respective owners.</sub></p>
+<p><sub>Any and all trademarks are the property of their respective owners.</sub></p

@@ -1,5 +1,14 @@
+## configuration
+<div align="center">
+    <a href="https://github.com/JuanRodenas/server-mariadb">
+        <img src="https://github.com/JuanRodenas/server-mariadb/blob/main/assets/Art/legal-graphic.jpg" alt="server" width="100%">
+    </a>
+    <br>
+</div>
+
 ## Documentation to deploy with MariaDB:
-```bash
+<p>This would be the example of MariaDB</p>
+<pre><code class="lang-bash">
 db:
 image: mariadb
 container_name: db
@@ -12,17 +21,28 @@ environment:
   MYSQL_DATABASE: ${DATABASE}
   MYSQL_USER: ${USERNAME}
   MYSQL_PASSWORD: ${PASSWORD}
-```
+</code></pre>
+
+<p>The data to be configured are contained in the <code>.env</code> file created during installation. We will modify the following data:</p>
+<pre><code class="lang-bash">
+DB_USERNAME=std_notes_user
+DB_PASSWORD=changeme123
+DB_DATABASE=standard_notes_db
+PASSWORD_ROOT=changeme_witch_superpassword
+</code></pre>
+
+<p>Change the password data and add a super secure password for <code>PASSWORD_ROOT</code>. Modify the database and user name to the one of your choice.</p>
 
 <aside>
 💡 Important: Do not add the .env file to the database, because it will not raise the container and will give error for the variables of another container.
 </aside>
 
-In the .env file, indicate the port of MariaDB
-```bash
+<p>In the <code>.env</code> file, indicate the port of MariaDB</p>
+<pre><code class="lang-bash">
 DB_HOST=db
 DB_PORT=3306
-```
+</code></pre>
+<p>Do not modify the database type: <code>DB_TYPE=mysql</code></p>
 
 And to add the "Subscriptions on your self-hosted server" for MariaDB
 
@@ -65,12 +85,14 @@ In order to upload files you have to have an active subscription for your user. 
 </aside>
 
 
-## Emphasize the importance of creating 3 "different" keys in these sections with the following command: openssl rand -hex 32
+## Emphasize the importance of creating 3 "different" keys in these sections with the following command:
 *Create the password with: openssl rand -hex 32*
 
+```
 AUTH_SERVER_ENCRYPTION_SERVER_KEY=
 AUTH_JWT_SECRET=
 VALET_TOKEN_SECRET=
+```
 
 <aside>
 💡 Note: I noticed that if you don't set them different, the files get corrupted when uploading.
