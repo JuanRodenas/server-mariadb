@@ -28,27 +28,27 @@ cd standardnotes
 </code></pre>
 
 2. Create a `.env` file in your working directory. Then copy our example values to your file:
-<p>&ensp;<a href="https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/.env.sample?raw=true"><img src="https://img.shields.io/badge/Download-.env-FFD700.svg?style=flat&logo=download" alt="Download"></a></p>
+<p>&ensp;<a href="https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/.env.sample?raw=true"><img src="https://img.shields.io/badge/Download-.env-ffbf00.svg?style=flat&logo=download" alt="Download"></a></p>
 <pre>&ensp;<code class="lang-bash">
 touch .env && \
 curl https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/.env.sample -o .env
 </code></pre>
 
 3. Copy the [LocalStack bootstrap script](https://github.com/standardnotes/server/blob/main/docker/localstack_bootstrap.sh) and place it in your working directory. Ensure the file has executable permissions:
-<p>&ensp;<a href="https://github.com/standardnotes/server/blob/main/docker/localstack_bootstrap.sh?raw=true"><img src="https://img.shields.io/badge/Download-localstack_bootstrap.sh-FFD700.svg?style=flat&logo=download" alt="Download"></a></p>
+<p>&ensp;<a href="https://github.com/standardnotes/server/blob/main/docker/localstack_bootstrap.sh?raw=true"><img src="https://img.shields.io/badge/Download-localstack_bootstrap.sh-ffbf00.svg?style=flat&logo=download" alt="Download"></a></p>
 <pre>&ensp;<code class="lang-bash">
 curl https://raw.githubusercontent.com/standardnotes/server/main/docker/localstack_bootstrap.sh -o localstack_bootstrap.sh
 chmod +x localstack_bootstrap.sh
 </code></pre>
 
 4. Copy the `docker-compose.yml` working folder:
-<p>&ensp;<a href="https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/docker-compose.yml?raw=true"><img src="https://img.shields.io/badge/Download-docker_compose.yml-FFD700.svg?style=flat&logo=download" alt="Download"></a></p>
+<p>&ensp;<a href="https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/docker-compose.yml?raw=true"><img src="https://img.shields.io/badge/Download-docker_compose.yml-ffbf00.svg?style=flat&logo=download" alt="Download"></a></p>
 <pre>&ensp;<code class="lang-bash">
 curl https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/docker-compose.yml -o docker-compose.yml
 </code></pre>
 
 5. Download the files for nginx:
-<p>&ensp;<a href="https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip?raw=true"><img src="https://img.shields.io/badge/Download-nginx.zip-FFD700.svg?style=flat&logo=download" alt="Download"></a></p>
+<p>&ensp;<a href="https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip?raw=true"><img src="https://img.shields.io/badge/Download-nginx.zip-ffbf00.svg?style=flat&logo=download" alt="Download"></a></p>
 <pre>&ensp;<code class="lang-bash">
 wget https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip && unzip nginx.zip
 </code></pre>
@@ -64,4 +64,4 @@ wget https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip && unzip n
 
 ## Configure nginx with reverse proxy
 <p>To configure nginx with reverse proxy, please refer to the following readme:</p>
-<p>&ensp;<a href="./https-support.md#https-on-your-standard-note-server-with-a-reverse-proxy"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a></p>
+<p><a href="./https-support.md#https-on-your-standard-note-server-with-a-reverse-proxy"><img src="https://img.shields.io/badge/https_support-ffbf00.svg?style=flat" alt="nginx"></a></p>
