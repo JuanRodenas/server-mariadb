@@ -84,6 +84,7 @@ In order to use HTTPS on your standard note server, you have two options, use yo
       - 443:443
       - 3125:3125
 	```
+	
 	1.2 Then we will modify the server_name to be able to redirect to our local IP. Change the IP of the example to your server ip.
 	
 	- standardnotes.conf
@@ -95,6 +96,7 @@ In order to use HTTPS on your standard note server, you have two options, use yo
     server_name 127.0.0.1;
 	```
 	If you use `server_name _;` it will send all the requests.
+	
 	1.3 We will add the ssl to be able to use the certificates that we will create:
 	- We will modify the nginx file in the `conf.d` folder named `standardnotes.conf`. We replace the listen 80 by 443.
 	```bash
@@ -116,7 +118,7 @@ In order to use HTTPS on your standard note server, you have two options, use yo
 	```
 2. Setting up Certbot for HTTPS configuration:
 Go to [certbot](https://certbot.eff.org/instructions) to get and install your HTTPS certificate. Certbot should automatically update your Nginx configuration and create SSL certificates for you. If you have not used cerbot, I have a tutorial in my adguard home repository to create a certificate with cerbot, in the following link:
-<p><a href="https://github.com/JuanRodenas/Pihole_list#create-the-certificate-with-lets-encrypt"><img src="https://img.shields.io/badge/create the certificate with lets encrypt-blue.svg?style=flat" alt="letsencrypt"></a></p>
+<pre><p><a href="https://github.com/JuanRodenas/Pihole_list#create-the-certificate-with-lets-encrypt"><img src="https://img.shields.io/badge/create the certificate with lets encrypt-blue.svg?style=flat" alt="letsencrypt"></a></p></pre>
 
 3. Once the certificates have been created, we will proceed to send the files in the docker compose to the container as in the example:
 <pre><code class="lang-bash"><span class="hljs-symbol">volumes:</span>
@@ -131,20 +133,20 @@ Go to [certbot](https://certbot.eff.org/instructions) to get and install your HT
 </aside>
 </details>
 
-<h3 id="https-on-your-standard-note-server-with-a-reverse-proxy">HTTPS on your standard note server with a reverse proxy</h3>
+### HTTPS on your standard note server with a reverse proxy
 <details>
 <summary>HTTPS on your standard note server with a reverse proxy</summary>
 
 <Original>&nbsp;HTTPS on your standard note server with a reverse proxy:</Original>
 
-<h3 id="https-on-your-standard-note-server-with-a-reverse-proxy">HTTPS on your standard note server with a reverse proxy</h3>
+#### HTTPS on your standard note server with a reverse proxy
 1. We can install a reverse proxy, such as traefik. Traefik puede utilizar un proveedor ACME (como Let's Encrypt) para la generación automática de certificados. Creará el certificado e intentará renovarlo automáticamente 30 días antes de su vencimiento. Uno de los grandes beneficios de usar desafíos DNS es que nos permitirá usar certificados comodín; por otro lado, puede crear un riesgo de seguridad ya que requiere otorgar derechos a Traefik para crear y eliminar algunos registros DNS.
 <p>You can install Traefik from the repository I have created for this purpose.</p>
 <p><a href="https://github.com/JuanRodenas/selfhosted/tree/main/traefik"><img src="https://img.shields.io/badge/traefik-blue.svg?style=flat" alt="traefik"></a></p>
 
 <aside>
 💡 <strong>Informative note:</strong>
-<p>&nbsp;&nbsp;If you install Traefik, check the repository sample configuration with your configuration, they may not match.</code>.</p>
+<p>&nbsp;&nbsp;If you install Traefik, check the repository sample configuration with your configuration, they may not match.</code></p>
 </aside>
 
 2. Then we will modify the server_name to be able to redirect to our local IP.
