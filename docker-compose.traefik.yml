@@ -18,19 +18,14 @@ services:
       - "traefik.http.routers.sync.service=sync"
       - "traefik.http.routers.sync.tls=true"
       - "traefik.http.routers.sync.tls.certresolver=lets-encrypt"
-      # ipwhitelist
-      - "traefik.http.routers.standardnotes.middlewares=securednote"
-      - "traefik.http.routers.sync.middlewares=securednote"
-      - "traefik.http.middlewares.securednote.chain.middlewares=lista-blanca-standardnotes"
-      - "traefik.http.middlewares.lista-blanca-standardnotes.ipwhitelist.sourcerange=192.168.1.0/24, 10.10.2.1, 10.10.3.1"
     networks:
       - nextcloud
       - internal
-	  
+
   app:
     networks:
       - internal
-	  
+
   localstack:
     networks:
       - internal
