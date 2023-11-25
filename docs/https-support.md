@@ -117,30 +117,26 @@ In order to use HTTPS on your standard note server, you have two options, use yo
 Go to [certbot](https://certbot.eff.org/instructions) to get and install your HTTPS certificate. Certbot should automatically update your Nginx configuration and create SSL certificates for you. If you have not used cerbot, I have a tutorial in my adguard home repository to create a certificate with cerbot, in the following link:
 <p><a href="https://github.com/JuanRodenas/Pihole_list#create-the-certificate-with-lets-encrypt"><img src="https://img.shields.io/badge/create the certificate with lets encrypt-blue.svg?style=flat" alt="letsencrypt"></a></p>
 
-	2.1 Once the certificates have been created, we will proceed to send the files in the docker compose to the container as in the example:
-	```bash
-    volumes:
-      - /etc/localtime:/etc/localtime:ro
-      - /etc/timezone:/etc/timezone:ro
-      - /path/to/data/nginx:/etc/nginx
-      - /path/to/data/certs:/etc/nginx/certs
-	```
-	
-	<aside>
-	💡 <strong>Informative note:</strong>
-	<p>&nbsp;&nbsp;If you want to send the <code>lets encrypt</code> folder, change the <code>/path/to/data</code> to <code>/path/to/data</code>.</p>
-	</aside>
+3. Once the certificates have been created, we will proceed to send the files in the docker compose to the container as in the example:
+<pre><code class="lang-bash"><span class="hljs-symbol">volumes:</span>
+    - <span class="hljs-regexp">/etc/localtime</span><span class="hljs-symbol">:/etc/localtime</span><span class="hljs-symbol">:ro</span>
+    - <span class="hljs-regexp">/etc/timezone</span><span class="hljs-symbol">:/etc/timezone</span><span class="hljs-symbol">:ro</span>
+    - <span class="hljs-regexp">/path/to</span><span class="hljs-regexp">/data/nginx</span><span class="hljs-symbol">:/etc/nginx</span>
+    - <span class="hljs-regexp">/path/to</span><span class="hljs-regexp">/data/certs</span><span class="hljs-symbol">:/etc/nginx/certs</span>
+</code></pre>
+<aside>
+💡 <strong>Informative note:</strong>
+<p>&nbsp;&nbsp;If you want to send the <code>lets encrypt</code> folder, change the <code>/path/to/data/certs:</code> to <code>/etc/letsencrypt/live/yourdomain.com:</code>.</p>
+</aside>
 </details>
-&nbsp;
 
-### HTTPS on your standard note server with a reverse proxy
+<h3 id="https-on-your-standard-note-server-with-a-reverse-proxy">HTTPS on your standard note server with a reverse proxy</h3>
 <details>
 <summary>HTTPS on your standard note server with a reverse proxy</summary>
 
 <Original>&nbsp;HTTPS on your standard note server with a reverse proxy:</Original>
 
-### HTTPS on your standard note server with a reverse proxy
-
+<h3 id="https-on-your-standard-note-server-with-a-reverse-proxy">HTTPS on your standard note server with a reverse proxy</h3>
 1. We can install a reverse proxy, such as traefik. Traefik puede utilizar un proveedor ACME (como Let's Encrypt) para la generación automática de certificados. Creará el certificado e intentará renovarlo automáticamente 30 días antes de su vencimiento. Uno de los grandes beneficios de usar desafíos DNS es que nos permitirá usar certificados comodín; por otro lado, puede crear un riesgo de seguridad ya que requiere otorgar derechos a Traefik para crear y eliminar algunos registros DNS.
 <p>You can install Traefik from the repository I have created for this purpose.</p>
 <p><a href="https://github.com/JuanRodenas/selfhosted/tree/main/traefik"><img src="https://img.shields.io/badge/traefik-blue.svg?style=flat" alt="traefik"></a></p>
@@ -165,7 +161,6 @@ Go to [certbot](https://certbot.eff.org/instructions) to get and install your HT
 After completing the above instructions, your Sync server should be HTTPS enabled!
 
 </details>
-&nbsp;
 
 In the account menu, choose `Advanced Options` and enter the address of your new server in `Sync Server Domain`.
 

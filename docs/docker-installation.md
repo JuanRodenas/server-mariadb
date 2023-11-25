@@ -60,4 +60,4 @@ wget https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip && unzip n
 
 ## Configure nginx with reverse proxy
 <p>To configure nginx with reverse proxy, please refer to the following readme:</p>
-<p><a href="./https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a></p>
+<p><a href="./https-support.md#https-on-your-standard-note-server-with-a-reverse-proxy"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a></p>

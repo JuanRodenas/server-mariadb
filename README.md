@@ -23,10 +23,10 @@
   
 
 ## Docker version
+Latest version of docker updated by its developer.
 
 ### Standard Notes
 ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/standardnotes/server/latest?style=flat&logo=docker&logoColor=white&label=standard%20notes&labelColor=0088cc&color=0088cc)
-
 
 ### Localstack
 ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/localstack/localstack/latest?style=flat&logo=docker&logoColor=white&label=localstack&labelColor=0088cc&color=0088cc)
@@ -103,8 +103,10 @@ We recommend avoiding setting up your syncing server from scratch with Nginx unl
 <a href="https://github.com/JuanRodenas/"><img src="https://img.shields.io/badge/-JuanRodenas-171515?style=flat&logo=Github&logoColor=black&labelColor=ececec&color=ececec" alt="GitHub"></a>
 
 ## 🎉 ¡Ready!
+<div align="center">
+<p><img src="https://github.com/JuanRodenas/server-mariadb/blob/main/assets/Logos/Logo.png" alt="server" width="200"></p>
+</div>
 &nbsp;
-
 <p>💡 <strong>Informative note:</strong></p>
 <p><sup>These files/texts are provided "AS IS", without warranties of any kind, express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose and non-infringement. In no event shall the authors or copyright holders be liable for any claims, damages or other liability arising out of or relating to the files or the use thereof.</sup></p>
-<p><sub>Any and all trademarks are the property of their respective owners.</sub></p>
+<p><sub>Any and all trademarks are the property of their respective owners.</sub></p
