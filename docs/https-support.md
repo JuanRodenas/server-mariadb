@@ -27,7 +27,7 @@ First we download the readme files:
 ```
 
 You can download the files again for nginx:
-<p>&nbsp;<a href="https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip?raw=true"><img src="https://img.shields.io/badge/Download-nginx.zip-green.svg?style=flat&logo=download" alt="Download"></a></p>
+<p>&nbsp;<a href="https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip?raw=true"><img src="https://img.shields.io/badge/Download-nginx.zip-b80909.svg?style=flat&logo=download" alt="Download"></a></p>
 <pre>&nbsp;<code class="lang-bash">
 wget https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip && unzip nginx.zip
 </code></pre>
@@ -119,7 +119,7 @@ In order to use HTTPS on your standard note server, you have two options, use yo
 2. Setting up Certbot for HTTPS configuration:
 Go to [certbot](https://certbot.eff.org/instructions) to get and install your HTTPS certificate. Certbot should automatically update your Nginx configuration and create SSL certificates for you. If you have not used cerbot, I have a tutorial in my adguard home repository to create a certificate with cerbot, in the following link:
 
-	[![letsencrypt](https://img.shields.io/badge/createthecertificatewithletsencrypt-blue.svg?style=flat)](https://github.com/JuanRodenas/Pihole_list#create-the-certificate-with-lets-encrypt)
+	[![Download](https://img.shields.io/badge/Install-certificate_with_lets_encrypt-blue.svg?style=flat&logo=download)](https://github.com/JuanRodenas/Pihole_list#create-the-certificate-with-lets-encrypt)
 
 3. Once the certificates have been created, we will proceed to send the files in the docker compose to the container as in the example:
 
@@ -145,8 +145,9 @@ Go to [certbot](https://certbot.eff.org/instructions) to get and install your HT
 
 #### HTTPS on your standard note server with a reverse proxy
 1. We can install a reverse proxy, such as traefik. Traefik puede utilizar un proveedor ACME (como Let's Encrypt) para la generación automática de certificados. Creará el certificado e intentará renovarlo automáticamente 30 días antes de su vencimiento. Uno de los grandes beneficios de usar desafíos DNS es que nos permitirá usar certificados comodín; por otro lado, puede crear un riesgo de seguridad ya que requiere otorgar derechos a Traefik para crear y eliminar algunos registros DNS.
-<p>You can install Traefik from the repository I have created for this purpose.</p>
-<p>&ensp;<a href="https://github.com/JuanRodenas/selfhosted/tree/main/traefik"><img src="https://img.shields.io/badge/traefik-blue.svg?style=flat" alt="traefik"></a></p>
+- You can install Traefik from the repository I have created for this purpose.
+
+	[![Download](https://img.shields.io/badge/Install-traefik-blue.svg?style=flat&logo=download)](https://github.com/JuanRodenas/selfhosted/tree/main/traefik)
 
 <aside>
 💡 <strong>Informative note:</strong>
