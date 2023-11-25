@@ -46,18 +46,18 @@ curl https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/docker-co
 
 5. Download the files for nginx [files nginx](https://github.com/JuanRodenas/server-mariadb/tree/main/nginx)
 ```bash
-curl https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/docker-compose.yml -o docker-compose.yml
+wget https://github.com/JuanRodenas/server-mariadb/tree/main/nginx
 ```
 
 ## Configuration .env and docker-compose.yml
 
 1. Change the database password:
 	- Edit the DB data in the `.env` file.
-	- In order to configure the .env file, please refer to the configuration readme. <a href="./docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a>
-2. Configure the nginx files from the https readme: <a href="./docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a>
-3. Configure the database files and uploads file from the readme: <a href="./docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a>
-4. In order to solve the problems you can check the readme: <a href="./docs/troubleshooting.md"><img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a>
+	- In order to configure the .env file, please refer to the configuration readme. <a href="./configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a>
+2. Configure the nginx files from the https readme: <a href="./https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a>
+3. Configure the database files and uploads file from the readme: <a href="./configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a>
+4. In order to solve the problems you can check the readme: <a href="./troubleshooting.md"><img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a>
 
 ## Configure nginx with reverse proxy
 <p>To configure nginx with reverse proxy, please refer to the following readme:</p>
-<p><a href="./docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a></p>
+<p><a href="./https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a></p>

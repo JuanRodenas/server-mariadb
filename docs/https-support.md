@@ -28,7 +28,7 @@ First we download the readme files:
 
 Download the files for nginx [files nginx](https://github.com/JuanRodenas/server-mariadb/tree/main/nginx)
 ```bash
-wge https://github.com/JuanRodenas/server-mariadb/tree/main/nginx
+wget https://github.com/JuanRodenas/server-mariadb/tree/main/nginx
 ```
 
 We modify the server_name of the files:
