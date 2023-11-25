@@ -26,7 +26,7 @@ First we download the readme files:
 +--- nginx.conf
 ```
 
-Download the files for nginx [files nginx](https://github.com/JuanRodenas/server-mariadb/tree/main/nginx)
+You can download the files again for nginx [files nginx](https://github.com/JuanRodenas/server-mariadb/tree/main/nginx)
 ```bash
 wget https://github.com/JuanRodenas/server-mariadb/tree/main/nginx
 ```
@@ -114,9 +114,8 @@ In order to use HTTPS on your standard note server, you have two options, use yo
     ssl_ciphers "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384";
 	```
 2. Setting up Certbot for HTTPS configuration:
-Go to [certbot](https://certbot.eff.org/instructions) to get and install your HTTPS certificate. Certbot should automatically update your Nginx configuration and create SSL certificates for you.
-<p>If you have not used cerbot, I have a tutorial in my adguard home repository to create a certificate with cerbot, in the following link:</p>
-<a href="https://github.com/JuanRodenas/Pihole_list#create-the-certificate-with-lets-encrypt"><img src="https://img.shields.io/badge/create the certificate with lets encrypt-blue.svg?style=flat" alt="letsencrypt"></a>
+Go to [certbot](https://certbot.eff.org/instructions) to get and install your HTTPS certificate. Certbot should automatically update your Nginx configuration and create SSL certificates for you. If you have not used cerbot, I have a tutorial in my adguard home repository to create a certificate with cerbot, in the following link:
+<p><a href="https://github.com/JuanRodenas/Pihole_list#create-the-certificate-with-lets-encrypt"><img src="https://img.shields.io/badge/create the certificate with lets encrypt-blue.svg?style=flat" alt="letsencrypt"></a></p>
 
 	2.1 Once the certificates have been created, we will proceed to send the files in the docker compose to the container as in the example:
 	```bash
@@ -131,7 +130,6 @@ Go to [certbot](https://certbot.eff.org/instructions) to get and install your HT
 	💡 <strong>Informative note:</strong>
 	<p>&nbsp;&nbsp;If you want to send the <code>lets encrypt</code> folder, change the <code>/path/to/data</code> to <code>/path/to/data</code>.</p>
 	</aside>
-
 </details>
 &nbsp;
 
@@ -144,7 +142,8 @@ Go to [certbot](https://certbot.eff.org/instructions) to get and install your HT
 ### HTTPS on your standard note server with a reverse proxy
 
 1. We can install a reverse proxy, such as traefik. Traefik puede utilizar un proveedor ACME (como Let's Encrypt) para la generación automática de certificados. Creará el certificado e intentará renovarlo automáticamente 30 días antes de su vencimiento. Uno de los grandes beneficios de usar desafíos DNS es que nos permitirá usar certificados comodín; por otro lado, puede crear un riesgo de seguridad ya que requiere otorgar derechos a Traefik para crear y eliminar algunos registros DNS.
-You can install Traefik from the repository I have created for this purpose. <a href="https://github.com/JuanRodenas/selfhosted/tree/main/traefik"><img src="https://img.shields.io/badge/traefik-blue.svg?style=flat" alt="traefik"></a>
+<p>You can install Traefik from the repository I have created for this purpose.</p>
+<p><a href="https://github.com/JuanRodenas/selfhosted/tree/main/traefik"><img src="https://img.shields.io/badge/traefik-blue.svg?style=flat" alt="traefik"></a></p>
 
 2. Then we will modify the server_name to be able to redirect to our local IP.
 

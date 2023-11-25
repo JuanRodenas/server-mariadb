@@ -46,7 +46,7 @@ curl https://raw.githubusercontent.com/JuanRodenas/server-mariadb/main/docker-co
 
 5. Download the files for nginx [files nginx](https://github.com/JuanRodenas/server-mariadb/tree/main/nginx)
 ```bash
-wget https://github.com/JuanRodenas/server-mariadb/tree/main/nginx
+wget https://github.com/JuanRodenas/server-mariadb/raw/main/nginx.zip && unzip nginx.zip
 ```
 
 ## Configuration .env and docker-compose.yml
