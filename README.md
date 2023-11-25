@@ -46,7 +46,7 @@ The first is the backend infrastructure. The backend is zero-knowledge, which me
 The server is responsible for authentication and syncing. When you self-host your own server, the end result will be an endpoint that you expose via HTTPS. You enter this endpoint in the Standard Notes client applications in the Custom sync server field (found under Advanced options when signing in or registering).
 Get started with self-hosting your own Standard Notes server:
 
-- Deploying a private Standard Notes server using [Docker](#Get-Started-using-Docker)
+- Deploying a private Standard Notes server using [Docker](#get-started-using-docker)
 
 ### Self-hosting Standard Notes client applications
 
