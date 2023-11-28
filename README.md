@@ -33,12 +33,11 @@ Latest version of docker updated by its developer.
 ### Localstack
 ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/localstack/localstack/latest?style=flat&logo=docker&logoColor=white&label=localstack&labelColor=535353&color=b80909)
 
-### Monitoring web app
-![Website](https://img.shields.io/website?up_message=online&up_color=green&down_message=offline&down_color=red&url=https%3A%2F%2Fapp.standardnotes.com&style=flat&label=app.standardnotes.com&labelColor=535353)
-
 ### Latest release app
 ![GitHub release (with filter)](https://img.shields.io/github/v/release/standardnotes/app?style=flat&logo=github&logoColor=white&label=Latest%20release%20app&labelColor=535353&color=b80909)
 
+### Monitoring web app
+![Website](https://img.shields.io/website?up_message=online&up_color=green&down_message=offline&down_color=red&url=https%3A%2F%2Fapp.standardnotes.com&style=flat&label=app.standardnotes.com&labelColor=535353)
 
 ## Requirements
 
