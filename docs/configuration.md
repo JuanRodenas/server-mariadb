@@ -34,7 +34,7 @@ PASSWORD_ROOT=changeme_witch_superpassword
 <p>Change the password data and add a super secure password for <code>PASSWORD_ROOT</code>. Modify the database and user name to the one of your choice.</p>
 
 <aside>
-💡 Important: Do not add the .env file to the database, because it will not raise the container and will give error for the variables of another container.
+:bulb: Important: Do not add the .env file to the database, because it will not raise the container and will give error for the variables of another container.
 </aside>
 
 <p>In the <code>.env</code> file, indicate the port of MariaDB</p>
@@ -81,7 +81,7 @@ In order to upload files you have to have an active subscription for your user. 
 `PUBLIC_FILES_SERVER_URL=`
 
 <aside>
-💡 Note: I have encountered a number of people who are lost and have given up on installing standardnotes because they are not clear on how to install it.
+:bulb: Note: I have encountered a number of people who are lost and have given up on installing standardnotes because they are not clear on how to install it.
 </aside>
 
 
@@ -95,5 +95,5 @@ VALET_TOKEN_SECRET=
 ```
 
 <aside>
-💡 Note: I noticed that if you don't set them different, the files get corrupted when uploading.
+:bulb: Note: I noticed that if you don't set them different, the files get corrupted when uploading.
 </aside>
