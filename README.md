@@ -7,7 +7,7 @@
     <br>
 </div>
 
-👉 I will update as soon as possible with more information.
+:point_right: I will update as soon as possible with more information.
 
 ## Table of contents
 
@@ -68,7 +68,7 @@ Our self-hosted server infrastructure consists of several different microservice
 
 ## Get Started using Docker
 <aside>
-💡 <strong>Informative note:</strong>
+:bulb: <strong>Informative note:</strong>
 <p>The steps based on this documentation may differ from the network you have configured. If you follow all the steps to the letter, they may not match your network configuration and render the Standard Notes Docker container unusable. Always adapt the documentation to match your network and configuration.</p>
 </aside>
 
@@ -76,13 +76,13 @@ In order to document the process, I have created a folder with different pages t
 
 | pages | readme |
 | :-- | :--: |
-| 👉 <em>Using our docker-compose configuration with MariaDB.</em> | <a href="docs/docker-installation.md"><img src="https://img.shields.io/badge/docker installation-blue.svg?style=flat" alt="installation"></a> |
-| 👉 <em>Install nginx and provide https to your instance.</em> | <a href="docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a> |
-| 👉 <em>Configuring the MariaDB database and file uploads.</em> | 	<a href="docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a> |
-| 👉 <em>Troubleshooting page.</em> | <a href="docs/troubleshooting.md"><img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a> |
+| :point_right: <em>Using our docker-compose configuration with MariaDB.</em> | <a href="docs/docker-installation.md"><img src="https://img.shields.io/badge/docker installation-blue.svg?style=flat" alt="installation"></a> |
+| :point_right: <em>Install nginx and provide https to your instance.</em> | <a href="docs/https-support.md"><img src="https://img.shields.io/badge/https support-blue.svg?style=flat" alt="nginx"></a> |
+| :point_right: <em>Configuring the MariaDB database and file uploads.</em> | 	<a href="docs/configuration.md"><img src="https://img.shields.io/badge/configuration-blue.svg?style=flat" alt="configuration"></a> |
+| :point_right: <em>Troubleshooting page.</em> | <a href="docs/troubleshooting.md"><img src="https://img.shields.io/badge/troubleshooting-blue.svg?style=flat" alt="troubleshooting"></a> |
 
 <aside>
-💡 <strong>Informative note:</strong>
+:bulb: <strong>Informative note:</strong>
 <p>&nbsp;&nbsp;Our configuration also provides a Redis cache node. I will provide help with that as well.</p>
 </aside>
 
@@ -99,21 +99,21 @@ We recommend avoiding setting up your syncing server from scratch with Nginx unl
 <a href="https://github.com/standardnotes/web"><img src="https://img.shields.io/badge/Repository for the web app on GitHub-blue.svg?style=flat" alt="Repository for the web app on GitHub"></a>
 
 ## Help me and contribution
-<p>🙌 &nbsp;If you have any problems with the operation of Standard Notes, please, open a <code>issue</code> here:</p>
+<p>:raised_hands: &nbsp;If you have any problems with the operation of Standard Notes, please, open a <code>issue</code> here:</p>
 <a href="https://github.com/standardnotes/server/issues"><img src="https://img.shields.io/badge/issues standardnotes-green.svg?style=flat" alt="Link"></a>
 
-<p>🙌 &nbsp;If you want to contribute to improve the installation configuration with MariaDB, open a <code>issue</code> here:</p>
+<p>:raised_hands: &nbsp;If you want to contribute to improve the installation configuration with MariaDB, open a <code>issue</code> here:</p>
 <a href="https://github.com/JuanRodenas/server-mariadb/issues"><img src="https://img.shields.io/badge/issues on repository-green.svg?style=flat" alt="Link"></a>
 
 ## Credits
-<p>🚀 &nbsp;This repository is made with all my love and affection.</p>
+<p>:rocket: &nbsp;This repository is made with all my love and affection.</p>
 <a href="https://github.com/JuanRodenas/"><img src="https://img.shields.io/badge/-JuanRodenas-171515?style=flat&logo=Github&logoColor=white&labelColor=black&color=ffbf00" alt="GitHub"></a>
 
-## 🎉 ¡Ready!
+## :tada: ¡Ready!
 <div align="center">
 <p><img src="https://github.com/JuanRodenas/server-mariadb/blob/main/assets/Logos/Logo.png" alt="server" width="200"></p>
 </div>
 &nbsp;
-<p>💡 <strong>Informative note:</strong></p>
+<p>:bulb: <strong>Informative note:</strong></p>
 <p><sup>These files/texts are provided "AS IS", without warranties of any kind, express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose and non-infringement. In no event shall the authors or copyright holders be liable for any claims, damages or other liability arising out of or relating to the files or the use thereof.</sup></p>
 <p><sub>Any and all trademarks are the property of their respective owners.</sub></p
