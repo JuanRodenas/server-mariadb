@@ -38,7 +38,7 @@ We modify the server_name of the files:
 	+--- standardnotes.conf
 
 <aside>
-💡 <strong>Informative note</strong>
+:bulb: <strong>Informative note</strong>
 <p>&ensp;Replace <code>fqdn.example.org</code> or <code>fqdn1.example.org</code> with your actual domain
 <p>&ensp;Replace port <code>80 for the server</code> and <code>3125 for the files</code> you have specified in the docker compose, if you have changed it. Here the docker-compose snippet, changed to <code>81</code> and <code>8080</code>.
 <pre><code class="lang-bash">
